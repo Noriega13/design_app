@@ -14,5 +14,5 @@ echo "EXPOSE 8080" >> tempdir/Dockerfile
 echo "CMD python3 /home/myapp/login.py" >> tempdir/Dockerfile
 cd tempdir
 docker build -t loginapp .
-docker run -t -d -p 8080:8080 --name loginrun loginapp
+docker run -t -d -p 5050:5050 --name loginrun loginapp
 docker ps -a
